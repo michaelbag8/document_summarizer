@@ -5,7 +5,7 @@ from prompts.prompt_manager import build_summary_prompt
 
 def test_valid_input():
     result = build_summary_prompt("Python is a programming language.")
-    assert result == "Summarize the following text:\nPython is a programming language."
+    assert result == "Python is a programming language."
 
 def test_invalid_input():
     with pytest.raises(TypeError, match="document_text must be a string"):

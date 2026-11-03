@@ -5,4 +5,4 @@ def build_summary_prompt(document_text):
     if document_text.strip() == "":
         raise ValueError("document_text cannot be empty")
 
-    return f"Summarize the following text:\n{document_text}"
+    return f"{document_text}"
